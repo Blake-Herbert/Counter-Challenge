@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counter</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="header-container">
+        <div class="header-content">
+            <h1>This is a counter</h1>
+            <p>It counts when you click the button</p>
+
+            <button onclick="Run()">
+                Press to add to counter!
+            </button>
+            
+	        <br><br>
+            <div id="GFG"></div>
+
+        </div>
+    </section>
+
+    <script>
+		function Run() {
+			let myDiv = document.getElementById("GFG");
+			// creating button element
+			let button = document.createElement('BUTTON');
+			// creating text to be
+			//displayed on button
+			let text = document.createTextNode("Button");
+			
+			// appending text to button
+			button.appendChild(text);
+			// appending button to div
+			myDiv.appendChild(button);;
+		}
+	</script>
+
+</body>
+</html>
