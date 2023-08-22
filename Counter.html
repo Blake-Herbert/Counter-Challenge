@@ -15,23 +15,29 @@
             <h1>This is a counter</h1>
             <p> </p>It counts when you click the button</p>
 
-            <button onclick="Count()">
+
+            <button id="button1" onclick="Count()">
                 Press to add to counter!
-                
             </button>
+
+            <script>
+
+                let count = 0;
+
+                function Count() {
+                    count++;
+                    document.getElementById("counterDisplay").innerHTML = count;
+
+                    
+                    }
+            </script>
 
             <p id="counterDisplay"></p>
 
         </div>
     </section>
 
-    <script>
-		function Count() {
-            let counter = 0;
-            counter++;
-            document.getElementById("counterDisplay").innerHTML = counter;
-        		}
-	</script>
+    
 
 </body>
 </html>
