@@ -16,9 +16,10 @@
             <p>It counts when you grab the button</p>
 
 
-            <button class="button" onclick="Count()">
+            <button class="button" id="counterButton">
                 Grab to add to counter!
             </button>
+            <br>
 
             <p id="counterDisplay"></p>
 
@@ -29,8 +30,10 @@
     <script>
 
         let count = 0;
-
+        const counterButton = document.getElementById("counterButton");
+        counterButton.addEventListener("click", Count);
         function Count() {
+            count;
             count++;
             document.getElementById("counterDisplay").innerHTML = count;
         }

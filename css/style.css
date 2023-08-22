@@ -23,7 +23,9 @@ body {
 }
 
 h1 {
-    border-style: none none dashed;
+    border-style: solid;
+    border-color: #79f9fd;
+
     text-transform: uppercase;
 }
 
@@ -31,15 +33,22 @@ p {
     text-transform: capitalize;
 }
 
+#counterDisplay {
+    text-transform: capitalize;
+    border-radius: 8px;
+    width: 320px;
+    padding: 10px;
+    /* background-color: #ffffff */
+}
+
 
 
 .button {
     background-color: #79f9fd;
-    border: outset 8px #4b053c;
+    border:  8px #4b053c;
     color: #112A46;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
