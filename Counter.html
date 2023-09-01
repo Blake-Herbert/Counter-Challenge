@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="1.js"></script>
     <title>Counter</title>
     
     <link rel="stylesheet" href="css/style.css">
@@ -21,23 +22,14 @@
             </button>
             <br>
 
-            <p id="counterDisplay"></p>
+            <p id="counterDisplay">  </p>
 
 
         </div>
     </section>
 
-    <script>
 
-        let count = 0;
-        const counterButton = document.getElementById("counterButton");
-        counterButton.addEventListener("click", Count);
-        function Count() {
-            count;
-            count++;
-            document.getElementById("counterDisplay").innerText = count;
-        }
-    </script>
+    <script src="CountScript.js"></script>    
 
 </body>
 </html>
